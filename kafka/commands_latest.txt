@@ -1,5 +1,6 @@
-export KAFKA_HOME="/Users/bhagvan.kommadi/desktop/kafka_2.11-0.9.0.0/"
-
+export KAFKA_HOME="/home/atingupta2005/kafka_2.12-3.1.0"
+cd
+git clone https://github.com/atingupta2005/apache-kafka-storm-integration
+cd apache-kafka-storm-integration/kafka
 javac -cp "$KAFKA_HOME/libs/*" SimpleProducerExample.java
-
 java -cp "$KAFKA_HOME/libs/*:." SimpleProducerExample ExampleTopic
